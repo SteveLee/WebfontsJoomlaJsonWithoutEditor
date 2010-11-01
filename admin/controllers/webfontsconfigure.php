@@ -211,7 +211,7 @@ class WebfontsBaseControllerWebfontsConfigure extends WebfontsBaseController
 		$model = $this->getModel('webfontsconfigure');
 		$link = 'index.php?option=com_webfonts&controller=webfontsconfigure&task=edit_domain&cid[]='.$_POST['project_id'];
 		if ($model->removeDomain($post)) {
-			$msg = JText::_( 'Domain Delete Succesfully!' );
+			$msg = JText::_( 'Domain Deleted Succesfully!' );
 			$this->setRedirect($link, $msg);
 		} else {
 			$msg = JText::_( 'Error Deleting Domain' );
